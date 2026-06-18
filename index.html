@@ -1,84 +1,21 @@
-<!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>MEXARE 2026</title>
+<title>MEXARE-2026</title>
 
-    <!-- IMPORTANTE PARA CELULAR -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <style>
-
-        body{
-            margin:0;
-            font-family: Arial, sans-serif;
-        }
-
-        /* MENU ARRIBA */
-        .menu{
-            width:100%;
-            height:60px;
-            border:none;
-        }
-
-        /* CONTENEDOR PRINCIPAL */
-        .contenedor{
-            display:flex;
-            height: calc(100vh - 60px);
-        }
-
-        /* LADO IZQUIERDO */
-        .lateral{
-            width:30%;
-            border:none;
-        }
-
-        /* LADO DERECHO */
-        .principal{
-            width:70%;
-            border:none;
-        }
-
-        /* 📱 VERSION CELULAR */
-        @media (max-width: 768px){
-
-            .contenedor{
-                flex-direction: column;
-                height: calc(100vh - 60px);
-            }
-
-            .lateral{
-                width:100%;
-                height:35%;
-            }
-
-            .principal{
-                width:100%;
-                height:65%;
-            }
-        }
-
-    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
-<body>
+<frameset rows="10%,90%">
+<frame src="menu2h.html" scrolling="no">
 
-    <!-- MENU -->
-    <iframe class="menu" src="menu2h.html"></iframe>
+<frameset cols="35%,65%">
+<frame src="prueba1.html" name="lateral">
+<frame src="registro.html" name="principal">
 
-    <!-- CONTENIDO -->
-    <div class="contenedor">
+</frameset>
+</frameset>
 
-        <!-- LATERAL -->
-        <iframe class="lateral" src="prueba1.html"></iframe>
-
-        <!-- PRINCIPAL -->
-        <iframe class="principal" src="registro.html"></iframe>
-
-    </div>
-
-</body>
 </html>
 </body>
 </html>
