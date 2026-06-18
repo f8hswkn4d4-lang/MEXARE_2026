@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Experiencia del Evento</title>
+<meta charset="UTF-8">
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+/* ANIMACIÓN */
+@keyframes entrada{
+from{
+opacity:0;
+transform:translateY(50px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* BODY */
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+}
+
+/* FONDO */
+body::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:90%;
+height:100%;
+background:url("8.png") center/cover no-repeat;
+filter:blur(8px) brightness(0.6);
+transform:scale(1.1);
+z-index:-2;
+}
+
+/* OSCURO */
+body::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:110%;
+background:rgba(0,0,0,0.4);
+z-index:-1;
+}
+
+/* CAJA */
+.contenedor{
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(12px);
+padding:40px;
+border-radius:20px;
+text-align:center;
+border:1px solid rgba(255,255,255,0.2);
+
+/* ANIMACIÓN BIEN APLICADA */
+animation:entrada 1s ease-out forwards;
+opacity:0;
+}
+
+/* TEXTO */
+h1{
+color:white;
+margin-bottom:20px;
+}
+
+/* BOTÓN */
+a{
+display:inline-block;
+padding:12px 20px;
+background:#ff2e2e;
+color:white;
+text-decoration:none;
+border-radius:12px;
+font-weight:bold;
+transition:0.3s;
+}
+
+a:hover{
+transform:scale(1.05);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1>EXPERIENCIA DEL EVENTO</h1>
+
+<a target="_blank"
+href="https://forms.cloud.microsoft/r/JirmuQqJLn?origin=lprLink">
+Dar opinión
+</a>
+
+</div>
+
+</body>
+</html>

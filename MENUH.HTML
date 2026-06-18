@@ -1,0 +1,93 @@
+<html>
+<head><title>menu</title>
+<style>
+	body{
+		 margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background-image:url("3-.JPG");
+    background-size:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    font-family:Arial, sans-serif;
+	}
+.dropdownmenu ul, .dropdownmenu li {
+	margin: 1;
+	padding: 0;
+}
+.dropdownmenu ul {
+	background: gray;
+	list-style: none;
+	width: 100%;
+}
+.dropdownmenu li {
+	float:inline-start;
+	position:absolute;
+	width:0ric;
+    
+    top: 0;
+    left: 575;
+
+}
+.dropdownmenu a {
+	background: #8e30e6f5;
+	color: #FFFFFF;
+	display: block;
+	font: bold 12px/20px sans-serif;
+	padding: 10px 25px;
+	text-align:center;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.dropdownmenu li:hover a {
+	background: #000000;
+}
+#submenu {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 35px;
+	visibility: hidden;
+	z-index: 1;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top: 100px;	/* adjust this as per top nav padding top & bottom comes */
+	visibility: visible;
+}
+#submenu li {
+	float: none;
+	width: 100%;
+}
+#submenu a:hover {
+	background: #DF4B05;
+}
+#submenu a {
+	background-color:#000000;
+}</style>
+</head>
+<body>
+<nav class="dropdownmenu">
+  <ul>
+    <li><a href="#">Principal</a></li>
+    <li><a href="#">Contenido</a>
+      <ul id="submenu">
+        <li><a href="#">Peliculas</a></li>
+        <li><a href="#">Series</a></li>
+        <li><a href="#">Cortos</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Informacion de Plataforma</a></li>
+    <li><a href="#">Carrusel</a></li>
+  </ul>
+</nav>
+</body>
+</html>

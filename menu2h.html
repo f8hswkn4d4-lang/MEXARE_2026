@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>menu2</title>
+<meta charset="UTF-8">
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+/* BARRA SUPERIOR */
+header{
+background:linear-gradient(90deg, #111, #333);
+padding:15px 20px;
+box-shadow:0 4px 15px rgba(0,0,0,0.4);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+/* MENÚ */
+nav ul{
+list-style:none;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+/* LINKS */
+nav a{
+text-decoration:none;
+color:white;
+font-size:15px;
+padding:10px 15px;
+border-radius:10px;
+transition:0.3s;
+position:relative;
+}
+
+/* HOVER MODERNO */
+nav a:hover{
+background:rgba(255,255,255,0.15);
+transform:translateY(-2px);
+}
+
+/* EFECTO SUBRAYADO ANIMADO */
+nav a::after{
+content:"";
+position:absolute;
+left:50%;
+bottom:5px;
+width:0%;
+height:2px;
+background:#00d4ff;
+transition:0.3s;
+transform:translateX(-50%);
+}
+
+nav a:hover::after{
+width:70%;
+}
+
+/* RESPONSIVE */
+@media (max-width:600px){
+nav ul{
+flex-direction:column;
+gap:10px;
+}
+
+header{
+text-align:center;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="registro.html" target="principal">Inicio</a></li>
+      <li><a href="Que es.html" target="principal">¿Qué es MEXARE?</a></li>
+     
+      <li><a href="Croquis.html" target="principal">Mapa del evento</a></li>
+      <li><a href="FOTOS.html" target="principal">Fotos del evento</a></li>
+      <li><a href="Formulario.html" target="principal">Cuéntanos tu experiencia</a></li>
+    </ul>
+  </nav>
+</header>
+
+</body>
+</html>

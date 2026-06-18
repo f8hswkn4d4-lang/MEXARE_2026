@@ -1,0 +1,144 @@
+<html>
+
+<head>
+<title>Feria Turística MEXARE</title>
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+/* FONDO */
+body{
+background:linear-gradient(135deg, #f3e7ff, #e0f7ff);
+color:#222;
+padding:20px;
+}
+
+/* TITULO */
+.header{
+text-align:center;
+padding:30px 10px;
+font-size:38px;
+font-weight:bold;
+letter-spacing:3px;
+color:#6a00ff;
+text-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* CONTENEDOR */
+.contenedor{
+max-width:1100px;
+margin:auto;
+background:white;
+border-radius:20px;
+padding:30px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* IMAGEN PRINCIPAL */
+.principal-img{
+width:40%;
+float:left;
+margin-right:20px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* TEXTO */
+h2{
+color:#d10000;
+margin-bottom:10px;
+}
+
+p{
+line-height:1.6;
+margin-bottom:15px;
+font-size:16px;
+}
+
+/* DESTACADO */
+.destacado{
+color:#1e3aff;
+font-weight:bold;
+}
+
+/* GALERÍA */
+.galeria{
+margin-top:30px;
+display:grid;
+grid-template-columns:1fr;
+gap:15px;
+}
+
+
+.horizontal{
+width:100%;
+height:280px;
+object-fit:contain;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.horizontal:hover{
+transform:scale(1.02);
+}
+
+/* RESPONSIVE */
+@media (max-width:700px){
+.principal-img{
+width:100%;
+float:none;
+margin-bottom:20px;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+Feria Turistica MEXARE
+</div>
+
+<div class="contenedor">
+
+<img src="6.png" class="principal-img">
+
+<h2>Feria Turística MEXARE - CONALEP Orizaba Plantel 252</h2>
+
+<p>
+<span class="destacado">La Feria Turística MEXARE</span> es un evento realizado por estudiantes donde se presentan propuestas relacionadas con el turismo, la cultura y las tradiciones.
+</p>
+
+<p>
+El objetivo es compartir experiencias, promover lugares turísticos y mostrar proyectos creativos desarrollados por los alumnos.
+</p>
+
+<p>
+Durante esta actividad se observan exposiciones, decoraciones temáticas y presentaciones culturales.
+</p>
+
+<p>
+Este tipo de eventos desarrolla habilidades como trabajo en equipo, creatividad, organización y comunicación.
+</p>
+
+<!-- GALERÍA -->
+<div class="galeria">
+
+<img src="7.png" class="horizontal">
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Índice</title>
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+/* PANTALLA COMPLETA */
+body{
+height:100vh;
+overflow:hidden;
+background:black;
+}
+
+/* IMAGEN FULL SCREEN */
+.fondo{
+position:relative;
+width:100%;
+height:100vh;
+}
+
+.fondo img{
+width:100%;
+height:100%;
+object-fit:cover; /* clave para que llene sin deformarse */
+
+filter:brightness(0.6) blur(10px) contrast(1.2);
+}
+
+/* TEXTO ENCIMA */
+.texto{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+text-align:center;
+color:white;
+}
+
+.texto h1{
+font-size:60px;
+letter-spacing:4px;
+text-shadow:0 5px 20px rgba(0,0,0,0.8);
+}
+
+.texto p{
+font-size:20px;
+margin-top:10px;
+color:#ddd;
+}
+
+/* BOTÓN OPCIONAL */
+.boton{
+margin-top:20px;
+display:inline-block;
+padding:12px 25px;
+background:#ff2e88;
+color:white;
+text-decoration:none;
+border-radius:12px;
+transition:0.3s;
+}
+
+.boton:hover{
+background:#ff5aa5;
+transform:scale(1.05);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="fondo">
+
+<img src="4.jpeg">
+
+<div class="texto">
+<h1> MEXARE</h1>
+<p>Feria Turística 2026 - CONALEP 252</p>
+
+<a class="boton" href="4.jpeg">Ver mapa</a>
+</div>
+
+</div>
+
+</body>
+</html>
