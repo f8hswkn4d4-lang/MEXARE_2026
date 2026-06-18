@@ -1,8 +1,10 @@
 <html>
 <head>
 <title>menu2</title>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
 
 /* RESET */
@@ -13,7 +15,7 @@ box-sizing:border-box;
 font-family:Arial, sans-serif;
 }
 
-/* BARRA SUPERIOR */
+/* HEADER */
 header{
 background:linear-gradient(90deg, #111, #333);
 padding:15px 20px;
@@ -21,16 +23,22 @@ box-shadow:0 4px 15px rgba(0,0,0,0.4);
 position:sticky;
 top:0;
 z-index:1000;
+color:white;
 }
 
-/* MENÚ */
-nav ul{
-list-style:none;
+/* NAV */
+nav{
 display:flex;
 justify-content:center;
 align-items:center;
+}
+
+/* MENU */
+nav ul{
+list-style:none;
+display:flex;
 gap:20px;
-flex-wrap:wrap;
+align-items:center;
 }
 
 /* LINKS */
@@ -42,15 +50,16 @@ padding:10px 15px;
 border-radius:10px;
 transition:0.3s;
 position:relative;
+display:block;
 }
 
-/* HOVER MODERNO */
+/* HOVER SOLO EN PC */
 nav a:hover{
 background:rgba(255,255,255,0.15);
 transform:translateY(-2px);
 }
 
-/* EFECTO SUBRAYADO ANIMADO */
+/* SUBRAYADO */
 nav a::after{
 content:"";
 position:absolute;
@@ -67,16 +76,38 @@ nav a:hover::after{
 width:70%;
 }
 
-/* RESPONSIVE */
+/* 📱 MÓVIL */
 @media (max-width:600px){
-nav ul{
+
+nav{
 flex-direction:column;
-gap:10px;
 }
 
-header{
-text-align:center;
+nav ul{
+flex-direction:column;
+width:100%;
+gap:10px;
+margin-top:10px;
 }
+
+nav li{
+width:100%;
+}
+
+nav a{
+width:100%;
+text-align:center;
+background:rgba(255,255,255,0.05);
+}
+
+nav a:active{
+background:rgba(255,255,255,0.2);
+}
+
+nav a::after{
+display:none; /* quita efecto raro en celular */
+}
+
 }
 
 </style>
@@ -85,17 +116,20 @@ text-align:center;
 <body>
 
 <header>
-  <nav>
-    <ul>
-      <li><a href="registro.html" target="principal">Inicio</a></li>
-      <li><a href="Que es.html" target="principal">¿Qué es MEXARE?</a></li>
-     
-      <li><a href="Croquis.html" target="principal">Mapa del evento</a></li>
-      <li><a href="FOTOS.html" target="principal">Fotos del evento</a></li>
-      <li><a href="Formulario.html" target="principal">Cuéntanos tu experiencia</a></li>
-    </ul>
-  </nav>
+
+<nav>
+  <ul>
+    <li><a href="registro.html" target="principal">Inicio</a></li>
+    <li><a href="Que es.html" target="principal">¿Qué es MEXARE?</a></li>
+    <li><a href="Croquis.html" target="principal">Mapa del evento</a></li>
+    <li><a href="FOTOS.html" target="principal">Fotos del evento</a></li>
+    <li><a href="Formulario.html" target="principal">Cuéntanos tu experiencia</a></li>
+  </ul>
+</nav>
+
 </header>
 
+</body>
+</html>
 </body>
 </html>
