@@ -4,26 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Menú</title>
+<title>MEXARE-2026</title>
 
 <style>
 
-/* RESET */
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:Arial;
 }
 
-/* BARRA SUPERIOR */
 header{
 background:#111;
 padding:15px;
 color:white;
 }
 
-/* MENÚ */
 nav{
 display:flex;
 justify-content:space-between;
@@ -31,7 +28,6 @@ align-items:center;
 flex-wrap:wrap;
 }
 
-/* LINKS */
 .menu{
 display:flex;
 gap:15px;
@@ -49,15 +45,19 @@ background:white;
 color:black;
 }
 
-/* BOTÓN HAMBURGUESA (solo móvil) */
-.menu-toggle{
+/* botón móvil */
+.toggle{
 display:none;
 font-size:25px;
 cursor:pointer;
 }
 
-/* 📱 MÓVIL */
-@media (max-width: 768px){
+/* 📱 celular */
+@media (max-width:768px){
+
+.toggle{
+display:block;
+}
 
 .menu{
 display:none;
@@ -70,10 +70,6 @@ margin-top:10px;
 display:flex;
 }
 
-.menu-toggle{
-display:block;
-}
-
 }
 
 </style>
@@ -84,11 +80,14 @@ display:block;
 <header>
 
 <nav>
-<div><b>Mi Página</b></div>
 
-<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<div><b>Mi página</b></div>
 
-<div class="menu" id="menu">
+<div class="toggle" onclick="document.querySelector('.menu').classList.toggle('active')">
+☰
+</div>
+
+<div class="menu">
 <a href="#">Inicio</a>
 <a href="#">Fotos</a>
 <a href="#">Videos</a>
@@ -99,11 +98,7 @@ display:block;
 
 </header>
 
-<script>
-function toggleMenu(){
-document.getElementById("menu").classList.toggle("active");
-}
-</script>
-
+</body>
+</html>
 </body>
 </html>
